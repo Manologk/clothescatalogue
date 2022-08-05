@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    transition: 0.3 cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+}
+
+.rela-inline{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.floated {
+    display: inline-block;
+    position: relative;
+    margin: false;
+    float: left;
+}
+
+.floated.right{
+    float: right;
+}
+
+.horz-center{
+    display: false;
+    position: absolute;
+    margin: false;
+    top: false;
+    left: 50%;
+    right: false;
+    bottom: false;
+    transform: translateX(-50%);
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #f4f4f4;
+}
+
+.nav-bar {
+    display: false;
+    position: fixed;
+    margin: false;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: false;
+    z-index: 10;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.logo{
+    font-family: "Yellowtail";
+    font-size: 34px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #2ebaae;
+}
+
+.nav-div {
+    font-family: "Roboto";
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 10px;
+    color: #999;
+    overflow: hidden;
+}
+
+.nav-div li{
+    padding: 0 9px;
+    cursor: pointer;
+}
+
+.nav-div li:hover{
+    color: #2ebaae;
+}
+
+.nav-links {
+    margin: 0;
+    width: 450px;
+}
+
+.search-container {
+    padding-right: 15px;
+    margin-left: 0px;
+}
+
+.sign-div li{
+    padding: 0 0 0 20px;
+}
+
+.sign-div.active {
+    width: 0px;
+    opacity: 0;
+    transition: 0.15s cubic-bezier(0.75, 0, 0.2, 1), width 0.3s 0.15s cubic-bezier(0.75, 0, 0.2, 1);
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-size: 30px !important;
+}
+
+.icon.search-icon{
+    background: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png") no-repeat;
+    background-position: 3px 3px;
+}
+
+.nav-search {
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 0px;
+}
+
+.nav-search:focus{
+    outline: none;
+}
+
+.nav-search.active{
+    width: 180px;
+    transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), width 0.3s 0.15s cubic-bezier(0.75, 0, 0.2, 1);
+}
