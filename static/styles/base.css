@@ -70,24 +70,22 @@ body {
     width: 100%;
     height: 30rem;
     position: relative;
-    background: brown;
+    background: rgb(228, 224, 224);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
   }
   .item__image {
-    height: 80%;
+    height: 85%;
     cursor: pointer;
   }
-  .item__image--hue {
-    filter: hue-rotate(130deg);
-  }
-  .item__detail {
+
+  /* .item__detail {
     font-size: 1.6rem;
     padding-top: 0.8rem;
     text-align: left;
   }
   .item__detail p {
     margin: 0;
-  }
+  } */
